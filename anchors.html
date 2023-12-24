@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>the document object</h1>
+    <h2>the anchors property</h2>
+    <a name="html">HTML tutorial</a><br>
+    <a name="css">CSS tutorial</a><br>
+    <a name="js">JS tutorial</a><br>
+    <p>number of anchors in this document is:</p>
+    <p id="demo"></p>
+    <p>content of the first anchor is:</p>
+    <p id="first"></p>
+
+    <script>
+        const count = document.anchors.length;
+        document.getElementById("demo").innerHTML = count;
+        const content = document.anchors[0].innerText;
+        document.getElementById("first").innerHTML = content;
+    </script>
+
+</body>
+</html>
