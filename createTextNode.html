@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>the document object</h1>
+    <h2>the createTextNode method</h2>
+    <p>create a text node on click:</p>
+    <button onclick="myFunction()">click</button>
+    <p id="demo"></p>
+    <script>
+        function myFunction(){
+            const textNode = document.createTextNode(" sample ");
+            document.getElementById("demo").appendChild(textNode);
+        }
+    </script>
+</body>
+</html>
