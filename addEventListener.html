@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>the documnet object</h1>
+    <h2>the addEventListener method</h2>
+    <p id="demo">test paragraph</p>
+
+    <script>
+        document.addEventListener("mouseover", myFunction);
+        document.addEventListener("click", secondFunction);
+        document.addEventListener("mouseout", thirdFunction);
+
+        function myFunction(){
+            document.getElementById("demo").innerHTML = "Mouse Over!"
+        }
+        function secondFunction(){
+            document.getElementById("demo").innerHTML = "Click!"
+        }
+        function thirdFunction(){
+            document.getElementById("demo").innerHTML = "Mouse Out!"
+        }
+    </script>
+</body>
+</html>
