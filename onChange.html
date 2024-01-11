@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <p>select a color:</p>
+    <select id="mySelect" onchange="myfunction()">
+        <option value="blue">blue</option>
+        <option value="red">red</option>
+        <option value="white">white</option>
+        <option value="green">green</option>
+    </select>
+    <p id="demo"></p>
+
+    <script>
+        function myfunction() {
+            let x = document.getElementById('mySelect').value;
+            document.getElementById('demo').innerHTML = 'you selected: ' + x;
+        }
+    </script>
+</body>
+
+</html>

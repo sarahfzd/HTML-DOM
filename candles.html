@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>double click to blow the candle!</p>
+    <div>
+        <img id="img" src="./img/on.jpeg" alt="on" width="140px;">
+    </div>
+    <p id="demo"></p>
+<script>
+    document.getElementById('img').addEventListener('dblclick', function(){
+        document.getElementById('img').setAttribute('src', './img/off.jpeg')
+        document.getElementById('demo').innerHTML = 'one click to light the candle!';
+    });
+    document.getElementById('img').addEventListener('click', function(){
+        document.getElementById('img').setAttribute('src', './img/on.jpeg')
+    });
+</script>
+</body>
+</html>
